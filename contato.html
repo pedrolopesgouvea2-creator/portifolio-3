@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Lopes Gouvea | Contato</title>
+
+  <!-- Google Fonts: Fraunces e Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Folha de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOPO E MENU FIXO ===== -->
+  <header class="topo">
+    <a class="logo" href="index.html#inicio">
+      <span>Pedro</span><span class="logo-destaque">.dev</span>
+    </a>
+    <nav>
+      <a href="index.html#inicio">Início</a>
+      <a href="index.html#sobre">Sobre mim</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projeto.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+      <button class="botao-tema" aria-label="Alternar modo claro e escuro" title="Alternar modo claro e escuro">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL: CONTATO ===== -->
+  <main class="container">
+    <h1>Vamos conversar!</h1>
+    <p class="projetos-subtitulo">Conte um pouco sobre o seu projeto ou mande uma mensagem direta.</p>
+
+    <div class="grade-contato">
+      
+      <!-- Coluna Esquerda: E-mail Direto e Redes -->
+      <div class="coluna-contato-info">
+        
+        <article class="cartao-email-destaque">
+          <h3>E-mail Direto</h3>
+          <p>Clique no botão para copiar meu e-mail:</p>
+          <div class="endereco-email" id="texto-email">pedrolopesgouvea2@gmail.com</div>
+          
+          <button type="button" class="botao" id="botao-copiar-email">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copiar e-mail</span>
+          </button>
+
+          <div class="notificacao-copiado" id="aviso-copiado" role="status" aria-live="polite">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>E-mail copiado com sucesso!</span>
+          </div>
+        </article>
+
+        <div class="lista-sociais">
+          <h3>Redes e Código</h3>
+
+          <a href="[link do GitHub]" class="cartao-social" target="_blank" rel="noopener noreferrer">
+            <div class="icone-social"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p>Acompanhe meus repositórios de código.</p>
+            </div>
+          </a>
+
+          <a href="[link do LinkedIn]" class="cartao-social" target="_blank" rel="noopener noreferrer">
+            <div class="icone-social"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>Conecte-se comigo no âmbito profissional.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Coluna Direita: Formulário de Contato -->
+      <article class="bloco-formulario">
+        <h3>Envie uma mensagem</h3>
+
+        <form id="formulario-contato" novalidate>
+          <div class="grupo-campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="campo-input" placeholder="Digite seu nome" required>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="campo-input" placeholder="pedrolopesgouvea2@gmail.com" required>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" class="campo-input" placeholder="Qual o assunto da mensagem?" required>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="campo-textarea" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+
+          <button type="submit" class="botao">
+            <span>Enviar Mensagem</span>
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
+
+          <div id="aviso-formulario" class="aviso-formulario" role="alert"></div>
+        </form>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="rodape-info">
+      <span class="rodape-autor">Pedro Lopes Gouvea</span>
+      <span class="rodape-data">Atualizado em 2026 · Feito com HTML, CSS e JavaScript</span>
+    </div>
+    <p class="rodape-data">Campo Mourão · Desenvolvedor iniciante</p>
+  </footer>
+
+  <script src="layout.js"></script>
+</body>
+</html>

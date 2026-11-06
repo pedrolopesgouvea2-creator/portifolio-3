@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Lopes Gouvea | Portfólio Pessoal</title>
+
+  <!-- Google Fonts: Fraunces e Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Folha de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== TOPO E MENU FIXO ===== -->
+  <header class="topo">
+    <a class="logo" href="#inicio" title="Pedro Lopes Gouvea">
+      <span>Pedro</span><span class="logo-destaque">.dev</span>
+    </a>
+
+    <nav aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button type="button" class="botao-tema" aria-label="Alternar modo claro e escuro" title="Alternar modo claro e escuro">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+
+    <button type="button" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL (ONE-PAGE) ===== -->
+  <main>
+
+    <!-- ===== SEÇÃO 1: INÍCIO (HERO) ===== -->
+    <section id="inicio" class="container secao-hero hero">
+      <div class="hero-grade">
+        
+        <div class="hero-conteudo">
+          <p class="hero-saudacao">Olá, bem-vindo!</p>
+          <h1 class="hero-nome">Pedro Lopes Gouvea</h1>
+          <h2 class="hero-cargo">Desenvolvedor iniciante · Campo Mourão</h2>
+          
+          <p class="hero-bio">
+            Tenho 15 anos, moro em Campo Mourão e sou desenvolvedor iniciante. Estou desenvolvendo minhas habilidades em tecnologia e criação de experiências digitais, aprendendo na prática e construindo projetos reais.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="#projetos" class="botao">
+              <span>Ver projetos</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contato" class="botao botao-claro">
+              <span>Falar comigo</span>
+              <i class="fa-regular fa-comment"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Avatar Monograma com aro azul/roxo -->
+        <div class="hero-visual">
+          <div class="avatar-moldura">
+            <div class="avatar-centro">
+              <span class="avatar-iniciais">PL</span>
+              <span class="avatar-tag">Front-End</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contadores de Destaque -->
+      <div class="grade-contadores">
+        <article class="cartao-contador">
+          <div class="numero-contador" data-alvo="2">2</div>
+          <div class="rotulo-contador">Projetos Principais</div>
+          <p class="desc-contador">Projetos reais publicados na web com foco em código limpo.</p>
+        </article>
+
+        <article class="cartao-contador">
+          <div class="numero-contador" data-alvo="6">6</div>
+          <div class="rotulo-contador">Habilidades</div>
+          <p class="desc-contador">Tecnologias em constante estudo e aplicação diária.</p>
+        </article>
+
+        <article class="cartao-contador">
+          <div class="numero-contador" data-alvo="12">12</div>
+          <div class="rotulo-contador">Meses de Estudo</div>
+          <p class="desc-contador">Dedicados aos fundamentos de desenvolvimento e interfaces.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 2: SOBRE MIM ===== -->
+    <section id="sobre" class="container">
+      <h2>Sobre mim</h2>
+      <article class="sobre-artigo">
+        <p>
+          Olá! Meu nome é Pedro Lopes Gouvea, tenho 15 anos e moro em Campo Mourão. Meu foco diário é construir uma base sólida no desenvolvimento web, combinando raciocínio lógico e cuidado visual para criar interfaces modernas, limpas e acessíveis.
+        </p>
+        <p>
+          Valorizo o código organizado e compreensível, sem truques desnecessários. Tenho me dedicado a aprender os fundamentos essenciais da web: HTML semântico, CSS moderno e estruturado, e JavaScript puro.
+        </p>
+      </article>
+    </section>
+
+    <!-- ===== SEÇÃO 3: HABILIDADES (SKILLS) ===== -->
+    <section id="skills" class="container">
+      <h3 class="subtitulo-habilidades">Habilidades em desenvolvimento</h3>
+
+      <div class="grade-habilidades">
+        <!-- 1. HTML5 -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-brands fa-html5"></i></div>
+            <h4>HTML5</h4>
+          </div>
+          <p>Estruturação semântica, organização de tags e acessibilidade básica.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>85%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 85%;"></div></div>
+          </div>
+        </article>
+
+        <!-- 2. CSS3 -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-brands fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+          </div>
+          <p>Estilização moderna, layouts fluidos com Flexbox e variáveis CSS.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>80%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 80%;"></div></div>
+          </div>
+        </article>
+
+        <!-- 3. JavaScript -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-brands fa-js"></i></div>
+            <h4>JavaScript</h4>
+          </div>
+          <p>Manipulação do DOM, interatividade, eventos e lógica de programação.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>70%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 70%;"></div></div>
+          </div>
+        </article>
+
+        <!-- 4. Git & GitHub -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-brands fa-git-alt"></i></div>
+            <h4>Git & GitHub</h4>
+          </div>
+          <p>Controle de versão, comandos fundamentais e repositórios na nuvem.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>75%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 75%;"></div></div>
+          </div>
+        </article>
+
+        <!-- 5. Python -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-brands fa-python"></i></div>
+            <h4>Python</h4>
+          </div>
+          <p>Lógica de programação, scripts de automação e manipulação de arquivos.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>60%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 60%;"></div></div>
+          </div>
+        </article>
+
+        <!-- 6. UI/UX & Interfaces -->
+        <article class="cartao-habilidade">
+          <div class="cabecalho-habilidade">
+            <div class="icone-habilidade"><i class="fa-solid fa-pen-nib"></i></div>
+            <h4>UI/UX & Design</h4>
+          </div>
+          <p>Hierarquia visual, espaçamento, tipografia e composição de telas limpas.</p>
+          <div class="barra-container">
+            <div class="barra-rotulo"><span>Nível de aprendizado:</span><span>65%</span></div>
+            <div class="trilho-progresso"><div class="preenchimento-progresso" style="width: 65%;"></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 4: PROJETOS ===== -->
+    <section id="projetos" class="container">
+      <h2>Projetos</h2>
+      <p class="projetos-subtitulo">Trabalhos reais desenvolvidos para aplicar conhecimentos na prática.</p>
+
+      <div class="grade-projetos" id="lista-projetos">
+        
+        <!-- Projeto 1: Nexus -->
+        <article class="cartao-projeto">
+          <div class="capa-projeto">
+            <img src="img/nexus.png" alt="Logotipo e painel do projeto Nexus" class="foto-cartao">
+            <span class="etiqueta-tag">Google Sites</span>
+          </div>
+          <div class="conteudo-projeto">
+            <h3>Nexus</h3>
+            <p>Integrated Productivity Dashboard — Painel de produtividade e organização pessoal integrada.</p>
+            <h4>Tecnologias</h4>
+            <p class="projeto-techs">Google Sites, UI/UX, Produtividade</p>
+            <div class="links-projeto">
+              <a class="botao" href="https://sites.google.com/d/1TFVEcwO84sdx4vBc-dJ_jH1lcKqoaWMQ/p/1CLN_noEz5YH3k5q7JZK9y8A5Cu_2kC80/edit?pli=1" target="_blank" rel="noopener noreferrer">
+                <span>Ver Projeto</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Easy Work -->
+        <article class="cartao-projeto">
+          <div class="capa-projeto">
+            <img src="img/easywork.png" alt="Logotipo do projeto Easy Work" class="foto-cartao">
+            <span class="etiqueta-tag">Vercel</span>
+          </div>
+          <div class="conteudo-projeto">
+            <h3>Easy Work</h3>
+            <p>Plataforma web para facilidades e serviços de trabalho de forma rápida e organizada.</p>
+            <h4>Tecnologias</h4>
+            <p class="projeto-techs">HTML, CSS, JavaScript, Vercel</p>
+            <div class="links-projeto">
+              <a class="botao" href="https://easywork-site.vercel.app" target="_blank" rel="noopener noreferrer">
+                <span>Ver Projeto</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="ver-todos">
+        <a href="projeto.html">Ver todos os projetos na galeria</a>
+      </p>
+    </section>
+
+    <!-- ===== SEÇÃO 5: CONTATO ===== -->
+    <section id="contato" class="container">
+      <h2>Vamos conversar!</h2>
+      <p>Estou aberto a oportunidades, dúvidas e troca de experiências na área de tecnologia.</p>
+
+      <div class="grade-contato">
+        
+        <!-- Coluna Esquerda: E-mail Direto e Redes -->
+        <div class="coluna-contato-info">
+          
+          <article class="cartao-email-destaque">
+            <h3>E-mail Direto</h3>
+            <p>Clique no botão para copiar meu e-mail:</p>
+            <div class="endereco-email" id="texto-email">pedrolopesgouvea2@gmail.com</div>
+            
+            <button type="button" class="botao" id="botao-copiar-email">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copiar e-mail</span>
+            </button>
+
+            <div class="notificacao-copiado" id="aviso-copiado" role="status" aria-live="polite">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>E-mail copiado com sucesso!</span>
+            </div>
+          </article>
+
+          <div class="lista-sociais">
+            <h3>Redes e Código</h3>
+
+            <a href="[link do GitHub]" class="cartao-social" target="_blank" rel="noopener noreferrer">
+              <div class="icone-social"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <p>Acompanhe meus repositórios de código.</p>
+              </div>
+            </a>
+
+            <a href="[link do LinkedIn]" class="cartao-social" target="_blank" rel="noopener noreferrer">
+              <div class="icone-social"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>Conecte-se comigo no âmbito profissional.</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Coluna Direita: Formulário de Contato -->
+        <article class="bloco-formulario">
+          <h3>Envie uma mensagem</h3>
+
+          <form id="formulario-contato" novalidate>
+            <div class="grupo-campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="campo-input" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" class="campo-input" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto" class="campo-input" placeholder="Qual o assunto da mensagem?" required>
+            </div>
+
+            <div class="grupo-campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="campo-textarea" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="botao">
+              <span>Enviar mensagem</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+            <div id="aviso-formulario" class="aviso-formulario" role="alert"></div>
+          </form>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="rodape-info">
+      <span class="rodape-autor">Pedro Lopes Gouvea</span>
+      <span class="rodape-data">Atualizado em 2026 · Feito com HTML, CSS e JavaScript</span>
+    </div>
+    <p class="rodape-data">Campo Mourão · Desenvolvedor iniciante</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="layout.js"></script>
+</body>
+</html>
